@@ -45,14 +45,16 @@ above equation it is not necessary to know the absolute value of pt and pr. Only
 
 **EXAMPLE**
 
-Suppose that a deflection of 5DB on 20DB range dB position was obtained in step 5,the difference between 4 and 5 is
-50-(20-5)=25DB 
-Convert the dB in to power ratio.as for above example is will come 316 which will be pt/pr .Calculate gain by following equation:
-G= 4ΠS/	√ Λ 0 *	√Pr / Pt
-In our above example suppose operating frequency is 9GHZ λ0=3.33CM.where c is velocityof light and is 3*1010CM/sec and distance between antennas is 150CM(suppose).
+Suppose that a deflection of 5DB on 20DB range dB position was obtained in step 5,the difference between 4 and 5 is 50-(20-5)=25DB Convert the dB in to power ratio.as for above example is will come 316 which will be pt/pr .Calculate gain by following equation: G= 4ΠS/ √ Λ 0 * √Pr / Pt In our above example suppose operating frequency is 9GHZ λ0=3.33CM.where c is velocityof light and is 3*1010CM/sec and distance between antennas is 150CM(suppose).
 
-7.	convert g into dB in above exampleG dB =10LOG318=15.02DB
-8.	the same setup can be used for other frequency of operation.
+convert g into dB in above exampleG dB =10LOG318=15.02DB
+
+the same setup can be used for other frequency of operation.
+
+The NIST Microwave Uncertainty Framework (MUF) is used to process all of the measurements. The MUF utilizes parallel sensitivity and Monte-Carlo analyses and enables us to capture and propagate the significant scattering parameters measurement uncertainties and statistical correlations between them. By identifying and modeling the physical error mechanisms in the calibration standards, we can determine the statistical correlations between both the scattering-parameters at a single frequency and uncertainties at different frequencies.
+
+The existing SOLT calibration process uses two different types of loads. If frequencies above 2 GHz are being used, a sliding load is used. The sliding load is not used because the fixed load is used below 2 GHz and above 2 GHz. For the new method, necessary because the sliding load was loads do not have a flat response across a broad frequency band. By measuring the response of the fixed load, any deviations from a flat response are accounted for and corrected. For the new technique, the fixed load is used across the entire frequency band.
+
 
 **BLOCK DIAGRAM:**
 
@@ -60,18 +62,7 @@ In our above example suppose operating frequency is 9GHZ λ0=3.33CM.where c is v
 
 **TABULATION:** 
 
-**HORN ANTENNA** 
 
-| Parameter | Symbol | Measurement | Remarks |
-|------------|---------|--------------|----------|
-| Beam Voltage | \( V_b \) | 8.5 V | From Gunn power supply |
-| Beam Current | \( I_b \) | 320 mA | Measured current |
-| Repeller Voltage | \( V_r \) | –2.8 V | Stable oscillation point |
-| Frequency | \( f \) | 9 GHz | Measured operating frequency |
-| Distance between antennas | \( S \) | 150 cm | Physical spacing |
-| Wavelength | ( λ ) | 3.33 cm | λ = c/f |
-| 3 dB Beamwidth | — | 32° | From radiation plot |
-| Gain | dB | 15 dB | Calculated from gain equation |
 
 **PARABOLICANTENNA**
 
@@ -87,51 +78,27 @@ In our above example suppose operating frequency is 9GHZ λ0=3.33CM.where c is v
 | Gain | dB | 22 dB | Calculated from gain equation |
 
 ## 📉 OBSERVATION TABLE 
-**Radiation Pattern of Horn Antenna**
 
-| Angle (°) | VSWR (dB) | Relative Power (dB) |
-|-----------|-----------|---------------------|
-| -50       | 10.5      | -9.0                |
-| -40       | 8.0       | -7.0                |
-| -30       | 5.0       | -5.0                |
-| -20       | 3.0       | -3.0                |
-| -10       | 1.5       | -1.5                |
-|  0        | 0.0       | 0.0                 |
-| +10       | 1.5       | -1.5                |
-| +20       | 3.0       | -3.0                |
-| +30       | 5.0       | -5.0                |
-| +40       | 8.0       | -7.0                |
-| +50       | 10.5      | -9.0                |
 
-→ 3 dB Beamwidth ≈ 32 degree
+![WhatsApp Image 2025-11-18 at 19 03 42_1a264016](https://github.com/user-attachments/assets/88ffcefa-3761-47aa-b387-449a3e368483)
 
-**Radiation Pattern of Parabolic Antenna**
 
-| Angle (°) | VSWR (dB) | Relative Power (dB) |
-|-----------|-----------|---------------------|
-| -40       | 15.0      | -12.0               |
-| -30       | 10.0      | -9.0                |
-| -20       | 4.0       | -4.0                |
-| -10       | 1.5       | -1.5                |
-| 0         | 0.0       | 0.0                 |
-| +10       | 1.5       | -1.5                |
-| +20       | 4.0       | -4.0                |
-| +30       | 10.0      | -9.0                |
-| +40       | 15.0      | -12.0               |
+**Graph**
 
-→ 3 dB Beamwidth ≈ 12 degree
+![WhatsApp Image 2025-11-18 at 19 03 46_c5cbde5f](https://github.com/user-attachments/assets/f5f9a52a-6c51-4d79-bd14-c1503877d00a)
 
+
+**PARABOLICANTENNA**
+
+Beam width of Parabolic antenna 20 degree
 
 **RESULT:**
 
-Thus the polar pattern and the gain of a waveguide horn antenna and parabolicantenna was measured and plotted.
+Thus the polar pattern and the gain of a parabolicantenna was measured and plotted.
 
-Beamwidth of horn antenna : 32 degree
+Beamwidth of parabolic antenna: 20*
 
-Beamwidth of parabolic antenna: 12 degree
-
-Gain (dB) of horn antenna : 15
-
-Gain (dB) of parabolic antenna: 22
+**CONCLUSION**
+A new technique has been described that was microwane Uncutainty Framework to establish au determined with well-defined tranceablity parth for soL7 calibrations In addition, measurments results Correlated uncutaints. Repeated parses through the procus Yeilded repeatable magnitude and phaSE is measured.
 
 
